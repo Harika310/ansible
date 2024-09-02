@@ -1,0 +1,5 @@
+- name: ping the server
+  hosts: web    #which host yor ansible wants connect
+  tasks: #list of modules
+  - name: ping the server
+    ansible.builtin.ping:
