@@ -2,4 +2,4 @@
   hosts: web
   tasks:
   - name: play-1 task-01
-    ansible.biultin.debug:
+    ansible.builtin.debug:
