@@ -1,0 +1,6 @@
+- name: variables from file
+  hosts: web
+  tasks:
+  - name: print the information
+    ansible.builtin.debug:
+      msg: "Hello {{name}}, Good {{Greeting}}"
