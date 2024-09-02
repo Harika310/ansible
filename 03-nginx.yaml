@@ -1,9 +1,9 @@
-- name: install and run nginx
+- name: nginx install and run
   hosts: web
-  become: yes   #become=root access
-  tasks: 
+  become: yes #sudo access
+  tasks:
   - name: install nginx
     ansible.builtin.package:
-    name: nginx
-    state: present
+      name: nginx
+      state: present
   
