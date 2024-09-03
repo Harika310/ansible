@@ -2,14 +2,14 @@
   hosts: local
   connection: local
   vars:
-    Course: Devops
-    duration: 120
-    topics: #list
+    Course: Devops   #string
+    duration: 120   #number
+    topics:   #list
     - Linux
     - shell
     - Ansible
     live: true #boolean
-    tools: #map
+    tools:     #map
       ci: jenkins
       cloud: aws
   tasks:
