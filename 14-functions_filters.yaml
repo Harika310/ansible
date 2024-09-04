@@ -35,4 +35,4 @@
       course: Devops
       duration: 102
     ansible.builtin.debug:
-      msg: "{{ course | dict2items }}"
+      msg: "{{ vars | dict2items }}"
