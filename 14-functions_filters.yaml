@@ -32,7 +32,8 @@
 
   - name: convert map to list
     vars:
-      course: Devops
-      duration: 102
+      course:
+        name: Devops
+        duration: 102
     ansible.builtin.debug:
-      msg: "{{ vars | dict2items }}"
+      msg: "{{ course | dict2items }}"
