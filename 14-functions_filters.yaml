@@ -7,14 +7,20 @@
       msg: "Hello {{ course | default('Ansible') }}"
 
 - name: convert to uppercase
+  hosts: local
+  connection: local
   vars:
     greeting: "Hello Harika"
   ansible.builtin.debug:
     msg: "{{ greeting | upper }}"
     
 
-- name: convert to lowercase
+- name: convert to 
+  hosts: local
+  connection: local
   vars:
     greeting: "Hello Harika"
   ansible.builtin.debug:
     msg: "{{ greeting | lower }}"            
+
+    
