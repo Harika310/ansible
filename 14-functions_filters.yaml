@@ -44,7 +44,7 @@
       - {
             "key": "name",
             "value": "Devops"
-        },
+        }
       - {
             "key": "duration",
             "value": 102
