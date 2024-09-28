@@ -3,4 +3,8 @@
   connection: local
   tasks:
   - name: execute the command
-    ansible.builtin.shell: ls -ltr > /tmp/output.txt
+    ansible.builtin.shell: ls -ltr > /tmp/output.
+    
+  - name: check the process
+    ansible.builtin.shell: ps -ef | grep ssh
+    register: output  
